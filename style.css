@@ -1,0 +1,224 @@
+/* Reset et boîte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Conteneur central */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* En-tête */
+header {
+    background: #0d2b52;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.subtitle {
+    opacity: 0.95;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-weight: 500;
+    transition: opacity 0.15s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Présentation */
+.about-content,
+.hero-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.about-photo,
+.photo {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.about-photo img,
+.photo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d2b52;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo-mail {
+    margin-top: 0.8rem;
+    font-size: 0.78rem;
+    word-break: break-word;
+}
+.photo-mail a {
+    color: #0d2b52;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.photo-mail a:hover {
+    text-decoration: underline;
+}
+
+/* Sections générales */
+section {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+section + section {
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Titres */
+h2 {
+    color: #0d2b52;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Listes */
+ul,
+ol {
+    margin-left: 1.25rem;
+    padding-left: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Liens */
+a {
+    color: #0d2b52;
+}
+
+a.button,
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #0d2b52;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: opacity 0.15s ease, transform 0.06s ease;
+}
+
+a.button:hover,
+.button:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+/* Formule MathJax */
+.formula {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
+
+/* Pied de page */
+footer {
+    background: #0d2b52;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    color: #fff;
+    margin: 0.4rem 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    opacity: 0.85;
+}
+
+.footer-contact {
+    word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content,
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.4rem 0;
+    }
+
+    .about-photo,
+    .photo {
+        flex: 0 0 auto;
+    }
+
+    .about-photo img,
+    .photo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
